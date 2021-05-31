@@ -1,0 +1,15 @@
+body {
+  min-width: 400px;
+  /* min-height: 400px; */
+  margin: 0;
+  background-color: rgba(0, 0, 0, 0.8);
+  color: #fff;
+}
+
+.popup-padded {
+  padding-top: 10px;
+  padding-bottom: 10px;
+  padding-left: 10px;
+  padding-right: 10px;
+  color: #fff;
+}
