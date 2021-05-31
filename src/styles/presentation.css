@@ -20,3 +20,102 @@
   font-weight: 200;
   margin: 0;
 }
+
+.large-text {
+  font-size: 2em;
+}
+
+.overlay {
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  background-color: rgba(0, 0, 0, 0.75);
+  color: #fff;
+  padding: 30px;
+  font-size: 1.5em;
+  backdrop-filter: blur(2px);
+}
+
+.overlay .divider {
+  margin-bottom: 15px;
+}
+
+.overlay h1,
+.overlay h2 {
+  margin-bottom: 0.5em;
+  text-shadow: 1px 2px 4px rgb(0 0 0 / 50%);
+}
+
+.overlay h3,
+.overlay h4,
+.overlay h5,
+.overlay p {
+  margin-bottom: 1em;
+}
+
+.overlay .row {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  margin-left: -15px;
+  margin-right: -15px;
+}
+
+.overlay .col {
+  position: relative;
+  display: flex;
+  display: inline-flex;
+  margin-left: 15px;
+  margin-right: 15px;
+}
+
+.btn {
+  position: relative;
+  padding: 15px 30px;
+  font-size: 1.2em;
+  border-radius: 4px;
+  background-color: #efefef;
+  color: #222;
+  border: none;
+  box-shadow: 0 2px 5px rgb(0 0 0 / 50%);
+}
+
+.btn:disabled {
+  opacity: 0.5;
+}
+
+.btn.primary {
+  background-color: #0af;
+  border-color: #0af;
+  color: #fff;
+}
+
+.btn.warning {
+  background-color: #fa0;
+  border-color: #fa0;
+  color: #111;
+}
+
+.button-load-indicator {
+  position: absolute;
+  height: '100%';
+  border-radius: 4px;
+  top: 0;
+  bottom: 0;
+}
+
+.button-load-indicator.primary {
+  background-color: #0af;
+}
+
+.button-load-indicator.warning {
+  background-color: #fa0;
+}

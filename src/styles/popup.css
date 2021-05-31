@@ -7,9 +7,25 @@ body {
 }
 
 .popup-padded {
-  padding-top: 10px;
-  padding-bottom: 10px;
-  padding-left: 10px;
-  padding-right: 10px;
+  padding: 15px;
   color: #fff;
+}
+
+.popup-heading {
+  margin: 0;
+  margin-bottom: 0.5em;
+  font-weight: 900;
+}
+
+.divider {
+  margin-bottom: 15px;
+}
+
+.popup-text {
+  margin: 0;
+  margin-bottom: 0.5em;
+}
+
+.popup-text:last-of-type {
+  margin-bottom: 0;
 }

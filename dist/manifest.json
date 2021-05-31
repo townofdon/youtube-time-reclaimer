@@ -1,37 +1,40 @@
 {
-    "name": "TS/R/WP Chrome Extension",
+    "name": "TubeTimeReclaimer",
     "version": "0.0.1",
-    "manifest_version": 2,
-    "description": "Boilerplate for a Chrome extension with TypeScript, React, and Webpack.",
-    "homepage_url": "https://duo.com/labs",
+    "manifest_version": 3,
+    "description": "Reclaim your life back from the YouTube vortex.",
+    "homepage_url": "https://dontownsendcreative.com",
     "icons": {
       "16": "icons/icon16.png",
       "48": "icons/icon48.png",
       "128": "icons/icon128.png"
     },
-    "browser_action": {
-      "default_title": "TSRWPCX",
-      "default_popup": "popup.html"
+    "action": {
+      "default_title": "TubeTimeReclaimer",
+      "default_popup": "popup.html",
+      "default_icon": {
+        "16": "/icons/icon16.png",
+        "32": "/icons/icon32.png",
+        "48": "/icons/icon48.png",
+        "128": "/icons/icon128.png"
+      }
     },
     "default_locale": "en",
     "background": {
-      "scripts": [
-        "js/background.js"
-      ],
-      "persistent": true
+      "service_worker": "service-worker.js",
+      "type": "module"
     },
     "permissions": [
-      "https://*/*",
       "tabs",
       "activeTab",
       "storage"
     ],
-    "content_security_policy": "default-src 'self';",
     "content_scripts": [
       {
         "matches": [
-          "https://*/*"
+          "*://*/*"
         ],
+        "run_at": "document_idle",
         "js": [
           "js/content.js"
         ],
